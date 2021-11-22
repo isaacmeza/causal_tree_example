@@ -144,7 +144,7 @@ fancyRpartPlot(opfit,  palettes=c("Blues", "BuGn"), sub="")
 vemos que hay cierta heterogeneidad en las distintas hojas del árbol, y en promedio un efecto positivo del tratamiento. Esto ayuda a responder la pregunta 1. de arriba. 
 
 
-# De árboles casuales a bosques causales
+# De árboles causales a bosques causales
 
 Dado un árbol como predictor
 $$ \hat\tau(x) = T(x; \{X_i,Y_i,W_i\}) $$

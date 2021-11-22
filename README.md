@@ -191,7 +191,7 @@ El comando para los árboles causales es `causalTree` de la librería `causalTre
 
 vemos que hay cierta heterogeneidad en las distintas hojas del árbol, y en promedio un efecto positivo del tratamiento. Esto ayuda a responder la pregunta 1. de arriba.
 
-De árboles casuales a bosques causales
+De árboles causales a bosques causales
 ======================================
 
 Dado un árbol como predictor \\\[ \\hat\\tau(x) = T(x; \\{X\_i,Y\_i,W\_i\\}) \\\] podemos construir y promediar distintos árboles \\(T^\*\\)
