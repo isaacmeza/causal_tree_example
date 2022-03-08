@@ -19,7 +19,7 @@ La estimación de *Efectos Heterogéneos* es fundamental en diversos problemas e
 
 El objetivo será la estimación de
 $$\mathbb{E}[\tau_i \;|\; X_i = x]$$
-donde $\tau_i$ será el efecp de tratamiento individual.
+donde $\tau_i$ será el efecto de tratamiento individual.
 
 
 ## Framework
