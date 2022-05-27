@@ -44,7 +44,7 @@ Sin mayores supuestos no podemos estimar $\tau(x)$, por lo que suponemos:
 
 #### Unconfoundedness
 
-$$\[\{Y\_i(0), Y\_i(1)\\} \perp W\_i\\; | X\_i\]$$
+$$\[\{Y\_i(0), Y\_i(1)\\} \text{perp} W\_i\\; | X\_i\]$$
 
 Causal Trees
 ------------
