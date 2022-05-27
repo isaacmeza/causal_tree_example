@@ -17,7 +17,7 @@ La estimación de _Efectos Heterogéneos_ es fundamental en diversos problemas e
 *   Fairness en ML
 *   Evaluación de políticas
 
-El objetivo será la estimación de \\\[\\mathbb{E}\[\\tau\_i \\;|\\; X\_i = x\]\\\] donde \\(\\tau\_i\\) será el efecto de tratamiento individual.
+El objetivo será la estimación de $$\mathbb{E}\[\\tau\_i \\;|\\; X\_i = x\]$$ donde ($$\tau\_i$$) será el efecto de tratamiento individual.
 
 Framework
 ---------
