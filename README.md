@@ -392,7 +392,7 @@ $$\text{Predicciones doblemente rob. del CATE}\_i = \\alpha + \\beta Variable\_{
 Por último hacemos una prueba de correcta especificación del bosque y existencia de heterogeneidad.
 
 $$\\begin{equation} Y\_{i} - \\hat{m}^{-i}(X\_{i}) = \\alpha\\bar{\\tau}\\left(W\_{i} - \\hat{e}^{-i}(X\_{i})\\right) + \\beta \\left(\\hat{\\tau}^{-i}(X\_{i}) - \\bar{\\tau} \\right) \\left(W\_{i} - \\hat{e}^{-i}(X\_{i}) \\right) + \\epsilon, \\end{equation}$$
-donde $\\bar{\\tau} := n^{-1}\sum_{i=1}^{n} \hat{\tau}^{-i}(X_{i})$.
+donde $\\bar{\\tau} := n^{-1}\sum_{i} \hat{\tau}^{-i}(X_{i})$.
 
 Los coeficientes $(\\alpha)$ y $(\\beta)$ nos permiten evaluar el desempeño de nuestras estimaciones. Si $(\\alpha=1)$, entonces la predicción promedio producida por el bosque es correcta. Mientras tanto, si $(\\beta=1)$, entonces las predicciones del bosque capturan adecuadamente la heterogeneidad subyacente.
 
