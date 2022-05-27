@@ -61,7 +61,7 @@ donde $\Pi\$ es un algoritmo para la construcción de un árbol, $\ell(x,\\Pi)$ 
 
 El MSE es el error medio entre la variable respuesta y el ajuste según la función $(\hat\\mu)$:
 
-$$MSE\_\\mu(S^{te}, S^{est}, \\Pi) = \\frac{1}{\\# (S^{te})}\\sum\_{i\\in S^{te}}\\{(Y\_i-\\hat\\mu(X\_i, S^{est}, \\Pi))^2-Y\_i^2\\}$ Notemos que se hace una partición de la muestra en $(S^{te})$ una muestra de prueba y $(S^{est})$ una muestra de estimación- en donde se ajusta la media condicional según el árbol $\Pi$.
+$$MSE\_\\mu(S^{te}, S^{est}, \\Pi) = \\frac{1}{\\# (S^{te})}\\sum\_{i\\in S^{te}}\\{(Y\_i-\\hat\\mu(X\_i, S^{est}, \\Pi))^2-Y\_i^2\\}$$ Notemos que se hace una partición de la muestra en $(S^{te})$ una muestra de prueba y $(S^{est})$ una muestra de estimación- en donde se ajusta la media condicional según el árbol $\\Pi$.
 
 Nuestra función objetivo a minimizar es $$Q(\\pi) = EMSE\_\\mu(\\pi(S^{est})) = \\mathbb{E}\_{S^{te}, S^{est}, S^{est}}\[MSE\_\\mu(S^{te}, S^{est}, \\pi(S^{est}))\]$$
 
