@@ -391,11 +391,12 @@ $$\text{Predicciones doblemente rob. del CATE}\_i = \\alpha + \\beta Variable\_{
 
 Por último hacemos una prueba de correcta especificación del bosque y existencia de heterogeneidad.
 
-\\\[\\begin{equation} Y\_{i} - \\hat{m}^{-i}(X\_{i}) = \\alpha\\bar{\\tau}\\left(W\_{i} - \\hat{e}^{-i}(X\_{i})\\right) + \\beta \\left(\\hat{\\tau}^{-i}(X\_{i}) - \\bar{\\tau} \\right) \\left(W\_{i} - \\hat{e}^{-i}(X\_{i}) \\right) + \\epsilon, \\end{equation}\\\] donde \\(\\bar{\\tau} := n^{-1}\\sum\_{i=1}^{n} \\hat{\\tau}^{-i}(X\_{i})\\).
+$$\\begin{equation} Y\_{i} - \\hat{m}^{-i}(X\_{i}) = \\alpha\\bar{\\tau}\\left(W\_{i} - \\hat{e}^{-i}(X\_{i})\\right) + \\beta \\left(\\hat{\\tau}^{-i}(X\_{i}) - \\bar{\\tau} \\right) \\left(W\_{i} - \\hat{e}^{-i}(X\_{i}) \\right) + \\epsilon, \\end{equation}$$
+donde $\\bar{\\tau} := n^{-1}\\sum\_{i=1}^{n} \\hat{\\tau}^{-i}(X\_{i})$.
 
-Los coeficientes \\(\\alpha\\) y \\(\\beta\\) nos permiten evaluar el desempeño de nuestras estimaciones. Si \\(\\alpha=1\\), entonces la predicción promedio producida por el bosque es correcta. Mientras tanto, si \\(\\beta=1\\), entonces las predicciones del bosque capturan adecuadamente la heterogeneidad subyacente.
+Los coeficientes $(\\alpha\\)$ y $(\\beta\\)$ nos permiten evaluar el desempeño de nuestras estimaciones. Si $(\\alpha=1\\)$, entonces la predicción promedio producida por el bosque es correcta. Mientras tanto, si $(\\beta=1\\)$, entonces las predicciones del bosque capturan adecuadamente la heterogeneidad subyacente.
 
-La pendiente \\(\\beta\\) es una medida de cómo las predicciones del CATE covarían con el verdadero CATE. Por lo tanto, el p-value en la estimación del coeficiente también actúa como una prueba para la presencia de heterogeneidad. Si el coeficiente es significativamente mayor que cero, entonces podemos rechazar la nula de no heterogeneidad. Sin embargo, los coeficientes menores que 0 no son significativos y no se pueden interpretar.
+La pendiente $(\\beta\\)$ es una medida de cómo las predicciones del CATE covarían con el verdadero CATE. Por lo tanto, el p-value en la estimación del coeficiente también actúa como una prueba para la presencia de heterogeneidad. Si el coeficiente es significativamente mayor que cero, entonces podemos rechazar la nula de no heterogeneidad. Sin embargo, los coeficientes menores que 0 no son significativos y no se pueden interpretar.
 
     # Assessing heterogeneity
     
