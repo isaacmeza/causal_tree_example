@@ -63,7 +63,7 @@ El MSE es el error medio entre la variable respuesta y el ajuste según la funci
 
 $$MSE\_\\mu(S^{te}, S^{est}, \\Pi) = \\frac{1}{\\# (S^{te})}\\sum\_{i\\in S^{te}}\\{(Y\_i-\\hat\\mu(X\_i, S^{est}, \\Pi))^2-Y\_i^2\\}$$ Notemos que se hace una partición de la muestra en $(S^{te})$ una muestra de prueba y $(S^{est})$ una muestra de estimación- en donde se ajusta la media condicional según el árbol $\\Pi$.
 
-Nuestra función objetivo a minimizar es $$Q(\\pi) = EMSE\_\\mu(\\pi(S^{est})) = \\mathbb{E}\_{S^{te}, S^{est}, S^{est}}\[MSE\_\\mu(S^{te}, S^{est}, \\pi(S^{est}))\]$$
+Nuestra función objetivo a minimizar es $$Q(\\pi) = EMSE\_\\mu(\\pi(S^{est})) = \\mathbb{E}\_{S^{te}, S^{est}}\[MSE\_\\mu(S^{te}, S^{est}, \\pi(S^{est}))\]$$
 
 Un estimador insesgado para el $(EMSE\_\\mu(\\Pi))$ $$-\\widehat{EMSE}\_\\mu(S^{tr}, N^{est}, \\Pi) = \\frac{1}{N^{tr}} \\sum\_{i\\in S^{tr}} \\hat{\\mu}^2(X\_i, S^{tr}, \\Pi) - \\left(\\frac{1}{N^{tr}}+\\frac{1}{N^{est}}\\right)\\sum\_{\\ell\\in\\Pi}S^2\_{S^{tr}}(\\ell(x,\\Pi))$$ donde $(S^2\_{S^{tr}})$ es la varianza dentro de las hojas del árbol y $N$ denota el tamaño de muestra.
 

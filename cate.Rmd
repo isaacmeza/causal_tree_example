@@ -72,7 +72,7 @@ Notemos que se hace una partición de la muestra en $S^{te}$ una muestra de prue
 
 
 Nuestra función objetivo a minimizar es 
-$$Q(\pi) = EMSE_\mu(\pi(S^{est})) = \mathbb{E}_{S^{te}, S^{est}, S^{est}}[MSE_\mu(S^{te}, S^{est}, \pi(S^{est}))]$$ 
+$$Q(\pi) = EMSE_\mu(\pi(S^{est})) = \mathbb{E}_{S^{te}, S^{est}}[MSE_\mu(S^{te}, S^{est}, \pi(S^{est}))]$$ 
 
 Un estimador insesgado para el $EMSE_\mu(\Pi)$
 $$-\widehat{EMSE}_\mu(S^{tr}, N^{est}, \Pi) = \frac{1}{N^{tr}} \sum_{i\in S^{tr}} \hat{\mu}^2(X_i, S^{tr}, \Pi) - \left(\frac{1}{N^{tr}}+\frac{1}{N^{est}}\right)\sum_{\ell\in\Pi}S^2_{S^{tr}}(\ell(x,\Pi))$$
